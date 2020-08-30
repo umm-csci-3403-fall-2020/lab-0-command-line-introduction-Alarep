@@ -30,4 +30,4 @@ function big_clean(){
 	# Moving the new cleaned file to the appropriate directory
 	mv cleaned_"$Arch_Name" "$DIR" 	
 }
-big_clean $1
+big_clean "$1"

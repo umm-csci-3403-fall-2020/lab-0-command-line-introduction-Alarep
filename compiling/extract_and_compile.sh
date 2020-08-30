@@ -4,7 +4,7 @@
 tar -zxf NthPrime.tgz
 
 # combining the .c files
-cd NthPrime
+cd NthPrime || exit
 gcc -c main.c nth_prime.c
 gcc main.o nth_prime.o -o NthPrime
-./NthPrime $1
+./NthPrime "$1"
