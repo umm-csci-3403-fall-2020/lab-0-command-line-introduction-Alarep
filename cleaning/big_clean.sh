@@ -12,7 +12,7 @@ function big_clean(){
 	SCRATCH=$(mktemp -d)
 	
 	# Extract files to the temporary directory
-	tar -vxf "$Arch_Name" -C "$SCRATCH"
+	tar -xf "$Arch_Name" -C "$SCRATCH"
 
 	# Setting a variable as the directory for the moving phase
 	DIR=$(pwd)
